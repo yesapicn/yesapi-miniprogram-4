@@ -1,4 +1,4 @@
-@[toc]
+﻿@[toc]
 # 简介
 ## 小白接口+微信小程序示例四（小白开放平台-汉字拼音转换）
 小白君教您三步搭建自己的汉字拼音转换平台！（可用于小学语文app，拼音相关类应用）
@@ -13,6 +13,8 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190909191948801.png)
 ## 效果图如下
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190909222302864.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjkzMjM2OQ==,size_16,color_FFFFFF,t_70)
+
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190909222317690.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjkzMjM2OQ==,size_16,color_FFFFFF,t_70)
 # 联系我们
 如有问题，欢迎提交Issue到这里，我们会尽快回复您的，或者联系我们[@sHuXnHs](https://github.com/shuxnhs) [@WillFang1997](https://github.com/WillFang1997)
