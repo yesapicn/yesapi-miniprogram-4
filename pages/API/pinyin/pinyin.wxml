@@ -1,0 +1,101 @@
+<view bind:__l="__l">
+  <page-head title="{{title}}"></page-head>
+  <view class="uni-title uni-common-pl">获得汉字拼音首字母</view>
+  <view>
+    <form data-event-opts="{{[['submit',[['abbrOkay']]]]}}" bindsubmit="__e">
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">输入汉字</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder="请输入汉字名称" name="title" data-event-opts="{{[['input',[['abbrOkay'],['__set_model',['abbr','$event',[]]]]]]}}" value="{{abbr}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">首字母为</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder=" " name="title" disabled data-event-opts="{{[['input',[['__set_model',['first','$event',[]]]]]]}}" value="{{first}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-padding-wrap">
+        <view class="uni-btn-v">
+          <button type="primary" formType="submit">转换</button>
+        </view>
+      </view>
+    </form>
+    <view class="uni-title uni-common-pl">获得汉字拼音</view>
+    <form data-event-opts="{{[['submit',[['convertOkay']]]]}}" bindsubmit="__e">
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">输入汉字</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder="请输入汉字名称" name="title" data-event-opts="{{[['input',[['convertOkay'],['__set_model',['convert','$event',[]]]]]]}}" value="{{convert}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">拼音为</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder=" " name="title" disabled data-event-opts="{{[['input',[['__set_model',['second','$event',[]]]]]]}}" value="{{second}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-padding-wrap">
+        <view class="uni-btn-v">
+          <button type="primary" formType="submit">转换</button>
+        </view>
+      </view>
+    </form>
+    <view class="uni-title uni-common-pl">姓名转拼音(比如 ‘单’ 常见的音为 dan，而作为姓的时候读 shan)</view>
+    <form data-event-opts="{{[['submit',[['nameOkay']]]]}}" bindsubmit="__e">
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">输入汉字</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder="请输入汉字名称" name="title" data-event-opts="{{[['input',[['nameOkay'],['__set_model',['name','$event',[]]]]]]}}" value="{{name}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">姓名拼音</view>
+          <view class="uni-list-cell-db">
+            <input class="uni-input" type="text" placeholder="请输入姓名" name="title" disabled data-event-opts="{{[['input',[['__set_model',['third','$event',[]]]]]]}}" value="{{third}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-padding-wrap">
+        <view class="uni-btn-v">
+          <button type="primary" formType="submit">转换</button>
+        </view>
+      </view>
+    </form>
+    <view class="uni-title uni-common-pl">翻译整段汉文为拼音</view>
+    <form data-event-opts="{{[['submit',[['sentenceOkay']]]]}}" bindsubmit="__e">
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">输入整句</view>
+          <view class="uni-list-cell-db">
+            <textarea class="uni-input" style='height:200px' type="text" placeholder="请输入整个句子" name="title" data-event-opts="{{[['input',[['sentenceOkay'],['__set_model',['sentence','$event',[]]]]]]}}" value="{{sentence}}" bindinput="__e" />
+          </view>
+        </view>
+      </view>
+      <view class="uni-list">
+        <view class="uni-list-cell">
+          <view class="uni-list-cell-left">汉文拼音</view>
+          <view class="uni-list-cell-db">
+            <textarea class="uni-input" style='height:300px' maxlength='-1' type="text" placeholder=" " name="title" disabled data-event-opts="{{[['input',[['__set_model',['fourth','$event',[]]]]]]}}" value="{{fourth}}" bindinput="__e"></textarea>
+          </view>
+        </view>
+      </view>
+      <view class="uni-padding-wrap">
+        <view class="uni-btn-v">
+          <button type="primary" formType="submit">转换</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
